@@ -1,17 +1,48 @@
-<<<<<<< HEAD
-# React + Vite
+# 🎉 Plover Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! I'm Plover, a 18-year-old enthusiast interested in programming languages and technologies. This repository showcases my projects and skills as I continue to learn and grow in the field of software development. 🚀
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# ploverportfolio
-Plover Portfolio Page
->>>>>>> c66419e37d4639ce8cbc52a59a0ff4cf0fad5c3b
+- Node.js and npm installed (for React projects). 📦
+- A code editor (e.g., VS Code). ✍️
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/coderplover/ploverportfolio.git
+   ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd ploverportfolio
+   ```
+3. Install dependencies (for React projects):
+
+   ```bash
+   npm install
+   ```
+4. Start the project:
+
+    ```bash
+   npm start
+   ```
+
+## 🤝 Contributing
+
+Feel free to fork this repository and submit pull requests. I welcome any suggestions or improvements! 🌟
+
+## 📧 Contact
+
+- You can reach out to me via \[coderplover@gmail.com\].
+- Follow me on GitHub for more updates: https://github.com/coderplover.
+
+
+---
+
+*Last updated: May 22, 2025 at 11:40 PM +03* 🌙
