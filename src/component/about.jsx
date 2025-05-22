@@ -1,5 +1,5 @@
 import Plover from "../../public/plover.png";
-
+import { motion } from "framer-motion";
 import TechItem from "./techItem";
 import {
   faSquareJs,
@@ -22,16 +22,28 @@ import {
 export default function About() {
   return (
     <>
-      <div className="inline-flex flex-col gap-5 select-none sm:flex-row">
-        <div className="mt-5 border-1 border-zinc-900 hover:border-zinc-800 duration-300 hover:shadow-sm shadow-zinc-800 inline-flex flex-col p-4 rounded-xl gap-1 items-center">
+      <motion.div className="inline-flex flex-col gap-5 select-none sm:flex-row">
+        {/* Plover kutusu animasyonu */}
+        <motion.div
+          className="mt-5 border-1 border-zinc-900 hover:border-zinc-800 duration-300 hover:shadow-sm shadow-zinc-800 inline-flex flex-col p-4 rounded-xl gap-1 items-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+        >
           <img src={Plover} alt="Plover" className="w-36 rounded-lg" />
           <h1 className="text-xl">Plover</h1>
           <span className="text-sm text-violet-600 font-light">
             Ui/UX Design, Web Developer
           </span>
-        </div>
+        </motion.div>
 
-        <div className="mt-5 border-1 border-zinc-900 hover:border-zinc-800 duration-300 hover:shadow-sm shadow-zinc-800 w-full flex flex-col p-4 rounded-xl justify-between gap-2">
+        {/* About + Technology kutusu animasyonu */}
+        <motion.div
+          className="mt-5 border-1 border-zinc-900 hover:border-zinc-800 duration-300 hover:shadow-sm shadow-zinc-800 w-full flex flex-col p-4 rounded-xl justify-between gap-2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+        >
           <div>
             <div className="flex items-center gap-2">
               <FontAwesomeIcon icon={faUser} />
@@ -63,8 +75,8 @@ export default function About() {
               <TechItem name="Figma" iconstr={faFigma} />
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import ContactCard from "./contactCard";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,7 +14,12 @@ import {
 export default function Contact() {
   return (
     <>
-      <div className="my-6 border-1 border-zinc-900 hover:border-zinc-800 duration-300 hover:shadow-sm shadow-zinc-800 w-full flex flex-col p-4 rounded-xl justify-between gap-2">
+      <motion.div
+        className="my-6 border-1 border-zinc-900 hover:border-zinc-800 duration-300 hover:shadow-sm shadow-zinc-800 w-full flex flex-col p-4 rounded-xl justify-between gap-2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
         <div>
           <div className="flex items-center gap-2">
             <FontAwesomeIcon icon={faEnvelope} />
@@ -32,7 +38,7 @@ export default function Contact() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

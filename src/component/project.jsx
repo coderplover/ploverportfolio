@@ -1,4 +1,5 @@
 import ProjectCard from "./projectCard";
+import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -12,7 +13,12 @@ import {
 export default function Project() {
   return (
     <>
-      <div className="mt-6 border-1 border-zinc-900 hover:border-zinc-800 duration-300 hover:shadow-sm shadow-zinc-800 w-full flex flex-col p-4 rounded-xl justify-between gap-2">
+      <motion.div
+        className="mt-6 border-1 border-zinc-900 hover:border-zinc-800 duration-300 hover:shadow-sm shadow-zinc-800 w-full flex flex-col p-4 rounded-xl justify-between gap-2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
+      >
         <div>
           <div className="flex items-center gap-2">
             <FontAwesomeIcon icon={faCode} />
@@ -32,7 +38,7 @@ export default function Project() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
