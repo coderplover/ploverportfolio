@@ -1,4 +1,4 @@
-import ProjectCard from "./projectCard";
+import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
