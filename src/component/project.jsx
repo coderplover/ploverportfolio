@@ -28,7 +28,7 @@ export default function Project() {
           <div className="flex flex-wrap gap-5 mt-5">
             <ProjectCard
               name="ModCenter"
-              img="../../public/modcenter.png"
+              img="modcenter.png"
               url="https://www.instagram.com/_modcenter/"
             />
             <ProjectCard
