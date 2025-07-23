@@ -1,4 +1,4 @@
-import Plover from "https://xniopapp.vercel.app/_next/image?url=%2Fxniop.png&w=256&q=75";
+import Plover from "plover.png";
 import { motion } from "framer-motion";
 import TechItem from "./techItem";
 import {
