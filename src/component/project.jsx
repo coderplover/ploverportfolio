@@ -33,7 +33,7 @@ export default function Project() {
             />
             <ProjectCard
               name="Xniop Portfolio"
-              img="http://plover.rf.gd/img/xniopp.gif"
+              img="https://avatars.githubusercontent.com/u/60147808?v=4"
               url="https://xniopapp.vercel.app/"
             />
           </div>
