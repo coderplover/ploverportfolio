@@ -1,4 +1,4 @@
-import Plover from "plover.png";
+
 import { motion } from "framer-motion";
 import TechItem from "./techItem";
 import {
@@ -20,6 +20,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
+  const Plover = "plover.png";
   return (
     <>
       <motion.div className="inline-flex flex-col gap-5 select-none sm:flex-row">
